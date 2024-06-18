@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Task Manager</title>
+  </head>
+  <body class="bg-gray-200 text-gray-900">
+    <div class="max-w-2xl mx-auto mt-40 p-4 bg-white shadow-lg rounded-lg">
+      <form class="task-form mb-6">
+        <h4 class="text-3xl font-bold text-center mb-4">Task Manager</h4>
+        <div class="form-control mb-4 flex items-center">
+          <input
+            type="text"
+            name="name"
+            class="task-input w-4/6 mr-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="e.g. Go to gym"
+          />
+          <button type="submit" class="btn submit-btn w-2/6 bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Submit</button>
+        </div>
+        
+        <div class="form-alert text-red-500"></div>
+      </form>
+    </div>
+    <section class="tasks-container">
+      <p class="loading-text text-center text-gray-500">Loading...</p>
+      <div class="tasks"></div>
+    </section>
+  
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./browse-app.js"></script>
+  </body>
+</html>
