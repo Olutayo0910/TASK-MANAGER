@@ -1,3 +1,5 @@
+![HOMEPAGE-Task-manager](https://github.com/Olutayo0910/TASK-MANAGER-API/assets/121323757/ce8fca4d-ee65-426c-a3f2-abed7d3fad18)
+
 # Task Manager API
 
 A simple task manager API built with Express.js and MongoDB. This project allows users to create, read, update, and delete tasks via a RESTful API. Additionally, it includes a front-end interface to interact with the API.
